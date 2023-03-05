@@ -56,6 +56,16 @@ function playRound(playerSelection, computerSelection){
 
     }
 
+    if(player < computer){
+        console.log("COMPUTER WINNER!");
+    }
+    if(player > computer){
+        console.log("PLAYER WINNER!");
+    }
+    if(player == computer){
+        console.log("DRAW! ONE MORE GAME?");
+    }
+
 }
 
 
