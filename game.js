@@ -47,14 +47,14 @@ function playRound(playerSelection, computerSelection){
 
  function game(){
     const result = [];
-    for (let i = 0; i < 5; i++) {
+
         let playerSelection = prompt("Choose: Rock, Paper or Scissors").toLowerCase();
         const computerSelection = getComputerChoice().toLowerCase();
         playRound(playerSelection,computerSelection);
 
         console.log("Player's score is " + player + " Computer's score is " + computer);
 
-    }
+
 
     if(player < computer){
         console.log("COMPUTER WINNER!");
@@ -68,4 +68,4 @@ function playRound(playerSelection, computerSelection){
 
 }
 
-game();
+//game();
