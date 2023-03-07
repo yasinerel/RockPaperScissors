@@ -49,10 +49,10 @@ function playRound(playerSelection, computerSelection){
     }
 
     if(computer == 5){
-        console.log("🏆🏆🏆 COMPUTER WINNER! 🏆🏆🏆");
+        return ("🏆🏆🏆 COMPUTER WINNER! 🏆🏆🏆");
     }
     if(player == 5){
-        console.log("🏆🏆🏆 PLAYER WINNER! 🏆🏆🏆");
+        return ("🏆🏆🏆 PLAYER WINNER! 🏆🏆🏆");
     }
 
 }
