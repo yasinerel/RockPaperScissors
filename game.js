@@ -69,3 +69,20 @@ function playRound(playerSelection, computerSelection){
 }
 
 //game();
+
+const btnR = document.querySelector('#rock');
+btnR.addEventListener('click', () => {
+  console.log(playRound("rock", getComputerChoice().toLowerCase()));
+  
+});
+
+
+const btnP = document.querySelector('#paper');
+btnP.addEventListener('click', () => {
+    console.log(playRound("paper", getComputerChoice().toLowerCase()));
+});
+
+const btnS = document.querySelector('#scissors');
+btnS.addEventListener('click', () => {
+    console.log(playRound("scissors", getComputerChoice().toLowerCase()));
+});
