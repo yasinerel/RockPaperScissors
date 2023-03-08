@@ -1,6 +1,4 @@
-
 function getComputerChoice() {
-    //Rock’, ‘Paper’ or ‘Scissors’
     const array = ["rock", "paper" ,  "scissors"];
     const randomIndex = Math.floor(Math.random() * array.length);
     const item = array[randomIndex];
@@ -47,30 +45,13 @@ function playRound(playerSelection, computerSelection){
         console.log("Draw! Again");
         results();
     }
-
-    if(computer == 5){
-        return ("🏆🏆🏆 COMPUTER WINNER! 🏆🏆🏆");
-    }
-    if(player == 5){
-        return ("🏆🏆🏆 PLAYER WINNER! 🏆🏆🏆");
-    }
-
 }
-//console.log(playRound(playerSelection, computerSelection));
-
-
  function game(){
-
-    // let playerSelection = prompt("Choose: Rock, Paper or Scissors").toLowerCase();
-    // const computerSelection = getComputerChoice().toLowerCase();
-
     const btnR = document.querySelector('#rock');
     btnR.addEventListener('click', () => {
       playRound("rock", getComputerChoice().toLowerCase());
       
     });
-    
-    
     const btnP = document.querySelector('#paper');
     btnP.addEventListener('click', () => {
         playRound("paper", getComputerChoice().toLowerCase());
@@ -80,15 +61,23 @@ function playRound(playerSelection, computerSelection){
     btnS.addEventListener('click', () => {
         playRound("scissors", getComputerChoice().toLowerCase());
     });
-    //playRound(playerSelection,computerSelection);
 }
 
 
 function results(){
-    console.log("Player's score is " + player + " Computer's score is " + computer);
+    document.getElementById("resultsOfTheGame").innerHTML =  ("Player's score is " + player + " Computer's score is " + computer);
     console.log("*********||*********");
-    // console.log(computer);
-    // console.log(player);
+
+
+    if(computer == 5){
+        document.getElementById("resultsOfTheGame").innerHTML = ("🏆🏆🏆 COMPUTER WINNER! 🏆🏆🏆");
+
+    }
+    if(player == 5){
+        document.getElementById("resultsOfTheGame").innerHTML = ("🏆🏆🏆 PLAYER WINNER! 🏆🏆🏆");
+
+    }
+
 }
 
 game();

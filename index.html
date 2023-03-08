@@ -12,11 +12,7 @@
 <body>
     <div class="buttons">
 
-      <!-- <a id="deneme" href="https://youtube.com/">
-        <img style="height: 150p;" src="https://thumbs.dreamstime.com/b/cartoon-rock-pebbles-digital-illustration-147192308.jpg" alt="HTML tutorial" style="width:42px;height:42px;">
-      </a> -->
-      
-
+      <h4 style="text-align: center;">Make your choice to defeat the computer</h4>
           <button id="rock" type="submit">
             <img class="imgs" src="https://thumbs.dreamstime.com/b/cartoon-rock-pebbles-digital-illustration-147192308.jpg" alt="buttonpng" border="0"  />
           </button>
@@ -28,12 +24,44 @@
           <button id="scissors" type="submit">
             <img class="imgs" src="https://img.freepik.com/premium-vector/vector-doodle-hand-drawn-illustration-cartoon-scissors-isolated-white_364586-724.jpg?w=2000" alt="buttonpng" border="0" />
           </button>
-    
-    
     </div>
 
+  <section class="loader">
+    <div style="--i:0" class="slider">
+    </div>
+    <div style="--i:1" class="slider">
+    </div>
+    <div style="--i:2" class="slider">
+    </div>
+    <div style="--i:3" class="slider">
+    </div>
+    <div style="--i:4" class="slider">
+    </div>
+  </section>
 
-
+  <div class="container">
+    <div class="container_terminal"></div>
+    <div class="terminal_toolbar">
+        <div class="butt">
+            <button class="btn btn-color"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+        </div>
+        <p class="user">results@game</p>
+    </div>
+    
+    <div class="terminal_body">
+        <div class="terminal_promt">
+            <span class="terminal_user">johndoe@admin:</span>
+            <span class="terminal_location">~</span>
+            <span class="terminal_bling">$
+              <p id="resultsOfTheGame">
+             </p>
+            </span>
+            <span class="terminal_cursor"></span>
+        </div>
+    </div>
+</div>
     <script src="game.js"></script>
 </body>
 </html>
